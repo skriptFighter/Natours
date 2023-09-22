@@ -1,0 +1,57 @@
+.u-center-text {
+  text-align: center !important;
+}
+
+.u-margin-bottom-8 {
+  margin-bottom: 8rem !important;
+
+  @include respond(phone) {
+    margin-bottom: 4rem !important;
+  }
+}
+
+.u-margin-bottom-4 {
+  margin-bottom: 4rem !important;
+}
+
+.u-margin-bottom-2 {
+  margin-bottom: 2rem !important;
+}
+
+.u-margin-top-8 {
+  margin-top: 8rem !important;
+}
+
+.u-center-box {
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.u-footer-grid {
+  width: 70%;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 5fr 4fr;
+  align-items: start;
+  gap: 25rem;
+  width: 80%;
+
+  @include respond(tab-land) {
+    gap: 10rem;
+  }
+
+  @include respond(tab-port) {
+    grid-template-columns: 1fr;
+    gap: 5rem;
+    width: 70%;
+    text-align: center;
+  }
+
+  @include respond(phone) {
+    grid-template-columns: 1fr;
+    gap: 5rem;
+    width: 80%;
+    text-align: center;
+  }
+}
